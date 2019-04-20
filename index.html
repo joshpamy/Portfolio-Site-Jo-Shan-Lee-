@@ -4,7 +4,7 @@
 <head>
   <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet">
   <link href="img/favicon.jpg" rel="shortcut icon">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="utf-8">
@@ -14,8 +14,8 @@
 <body>
 
   <header>
-    <div>
-      <img src="img/logo.jpg" alt="Jo-Shan">
+    <div class="container">
+      <img src="img/logo.png" alt="Jo-Shan" class="logo">
       <nav>
         <ul>
           <li><a href="index.html" id="mywork"> Work </a></li>
@@ -27,9 +27,9 @@
   </header>
 
   <main>
-    <div>
+    <div id="hero">
       <!-- hero -->
-      <div>
+      <div class="container">
         <h1> This is Jo-Shan! <span>I'm a UX designer certified by CareerFoundry.</span> </h1>
         <p>
           I’m experienced in Customer Success and Digital Marketing, and maximising customer experience is my passion.
@@ -40,18 +40,18 @@
       </div>
     </div> <!-- end of hero -->
 
-    <div>
+    <div id="work">
       <!--work -->
-      <div>
+      <div class="container">
         <h2>My Work</h2>
 
-        <div>
+        <div class="row">
           <!-- first row -->
           <div>
             <!-- first column -->
             <picture>
-              <source srcset="img/expert/welcome_page.jpg" media="(max-width:767px)">
-              <img src="img/expert/expertpage.jpg" alt="CoachMe Expert Page">
+              <source srcset="img/expert/expert.jpg" media="(max-width:767px)">
+              <img src="img/expert/expertlist.jpg" alt="CoachMe Expert Page">
             </picture>
           </div>
           <div>
@@ -60,15 +60,16 @@
             <p>
               <a href="coachme.html">CoachMe Expert</a> is a platform that helps job seekers get career advice from experts from all around the world
             </p>
+            <a href="coachme.html" class="button">Read More</a>
           </div>
         </div> <!-- end of first row -->
 
-        <div>
+        <div class="row">
           <!-- second row -->
           <div>
             <!-- first column -->
             <picture>
-              <source srcset="img/expert/forumlist.jpg" media="(max-width:767px)">
+              <source srcset="img/expert/forum1.jpg" media="(max-width:767px)">
               <img src="img/expert/discussion.jpg" alt="CoachMe Forum">
             </picture>
           </div>
@@ -85,7 +86,7 @@
   </main>
 
   <footer>
-    <div>
+    <div class="container">
       <h2>Contact Me!</h2>
       <p>
         Please get in touch if you think we can collaborate or to discuss opportunities!
@@ -104,7 +105,7 @@
       </div>
 
       <div>
-        <p>
+        <p class="center">
           &copy; Copyright 2019 coachme.com
         </p>
       </div>
