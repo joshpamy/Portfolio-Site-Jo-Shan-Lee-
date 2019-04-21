@@ -14,31 +14,39 @@
 <body>
 
   <header>
-    <div>
+    <div class="container">
       <img src="img/logo.png" alt="Jo-Shan" class="logo">
       <nav>
         <ul>
-          <li><a href="index.html" id="mywork"> Work </a></li>
-          <li><a href="about.html" id="aboutme"> About </a></li>
-          <li><a href="#contact" id="mycontact"> Contact Jo-Shan </a></li>
+          <li><a href="index.html"> Work </a></li>
+          <li><a href="about.html"> About </a></li>
+          <li><a href="#contact"> Contact Jo-Shan </a></li>
         </ul>
       </nav>
     </div>
   </header>
 
   <main>
-    <div>
-      <!--main open-->
-      <div>
+    <div id="hero">
+      <!--main1 open-->
+      <div class="container">
         <!--open1-->
         <h1>CoachMe - Expert Page</h1>
       </div>
       <!--close1-->
-      <picture>
-        <source srcset="img/expert/home.jpg" media="(max-width:767px)">
-        <img src="img/expert/homepage.jpg" alt="CoachMe Home">
-      </picture>
-      <div>
+    </div>
+    <!--main1 close-->
+
+    <div id="process">
+      <!--main2 open-->
+      <div class="container">
+        <picture>
+          <source srcset="img/expert/home.jpg" media="(max-width:767px)">
+          <img src="img/expert/homepage.jpg" alt="CoachMe Home" class="img">
+        </picture>
+      </div>
+
+      <div class="container">
         <!--open1.1-->
         <p>
           The purpose of the expert page is for users to search for experts from around the world.
@@ -49,18 +57,18 @@
 
       <div>
         <!--open2-->
-        <div id="process">
+        <div class="container">
           <!--open2.1-->
           <h2>My Process</h2>
         </div>
         <!--close2.1-->
 
-        <div>
+        <div class="container">
           <!--open2.2-->
           <h3>User Flow - Expert page</h3>
           <picture>
             <source srcset="img/expert/userflow.jpg" media="(max-width:767px)">
-            <img src="img/expert/userflow.jpg" alt="User flow">
+            <img src="img/expert/userflow.jpg" alt="User flow" class="img2">
           </picture>
           <div>
             <!--open2.2a-->
@@ -75,65 +83,67 @@
       </div>
       <!--close2-->
 
-      <div class="row">
-        <!--open3 row-->
-        <h3> Ideation & Wireframe </h3>
-        <div>
-          <!--open column1-->
-          <picture>
-            <source srcset="img/expert/ideation.jpg" media="(max-width:767px)">
-            <img src="img/expert/ideation1.jpg" alt="Wireframes">
-          </picture>
-        </div>
-        <!--close column1-->
+      <div class="container">
+        <div class="row">
+          <!--open3 row-->
+          <h3> Ideation & Wireframe </h3>
+          <div>
+            <!--open column1-->
+            <picture>
+              <source srcset="img/expert/ideation.jpg" media="(max-width:767px)">
+              <img src="img/expert/ideation1.jpg" alt="Wireframes" class="img2">
+            </picture>
+          </div>
+          <!--close column1-->
 
-        <div>
-          <!--open column2-->
-          <p>
-            I’ve created a sketch of the design, followed by the low and mid-fidelity wireframe.
-            Usability testing was performed when the high fidelity version of the design was created.
-          </p>
+          <div>
+            <!--open column2-->
+            <p>
+              I’ve created a sketch of the design, followed by the low and mid-fidelity wireframe.
+              Usability testing was performed when the high fidelity version of the design was created.
+            </p>
+          </div>
+          <!--close column2-->
         </div>
-        <!--close column2-->
+        <!--close3 row-->
+
+        <div class="row">
+          <!--open4 row-->
+          <h3> Final Design </h3>
+          <div>
+            <!--open column1-->
+            <picture>
+              <source srcset="img/expert/expert.jpg" media="(max-width:767px)">
+              <img src="img/expert/expertlist.jpg" alt="Expert page" class="img">
+            </picture>
+          </div>
+          <!--close column1-->
+
+          <div>
+            <!--open column2-->
+            <p>
+              The wireframe was polished based on feedback from usability testing and accessibility testing.
+            </p>
+          </div>
+          <!--close column2-->
+        </div>
+        <!--close4 row-->
       </div>
-      <!--close3 row-->
 
-      <div class="row">
-        <!--open4 row-->
-        <h3> Final Design </h3>
-        <div>
-          <!--open column1-->
-          <picture>
-            <source srcset="img/expert/expert.jpg" media="(max-width:767px)">
-            <img src="img/expert/expertlist.jpg" alt="Expert page">
-          </picture>
-        </div>
-        <!--close column1-->
-
-        <div>
-          <!--open column2-->
-          <p>
-            The wireframe was polished based on feedback from usability testing and accessibility testing.
-          </p>
-        </div>
-        <!--close column2-->
-      </div>
-      <!--close4 row-->
-
-      <div>
+      <div class="container">
         <!--open5-->
         <h3> Prototype </h3>
         <p>
-          Checkout my prototype <a href="https://invis.io/2MRHMJCFB56#/347019005_High-Fid_V2-_Web_HomeNew1">here</a>
+          Checkout my prototype <a href="https://invis.io/2MRHMJCFB56#/347019005_High-Fid_V2-_Web_HomeNew1">here.</a>
         </p>
       </div>
       <!--close5-->
 
     </div>
-    <!--main close-->
+    <!--main2 close-->
   </main>
 
-  <footer>
+  <footer id="contact">
     <div class="container">
       <h2>Contact Me!</h2>
       <p>
@@ -148,8 +158,8 @@
 
       <div>
         <!-- social media -->
-        <img src="img/facebook.svg" alt="Facebook">
-        <img src="img/linkedin.svg" alt="Linkedin">
+        <img src="img/facebook.svg" alt="Facebook" class="social">
+        <img src="img/linkedin.svg" alt="Linkedin" class="social">
       </div>
 
       <div>

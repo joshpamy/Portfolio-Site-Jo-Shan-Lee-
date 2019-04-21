@@ -1,29 +1,43 @@
 /*
 Colors used:
-Background: ivory - #FFFFF0
+Background: #ffffff
 Font: #262626
 Primary: #006699 (blue) #ffcc66 (yellow)
-Secondary: #9dcd93 (green) #a96363(red-ish) #f2ebc6 (beige) #387f55 (darker green)
+Secondary: #9dcd93 (green) #a96363(red-ish) #f2ebc6 (beige) #387f55 (darker green) #DEF1EF (light baby blue)
 */
 * {
   box-sizing: border-box;
 }
 
 header {
-  background-color: #f2ebc6;
+  background-color: #DEF1EF;
   text-align: center;
   padding: 10px 0;
   box-shadow: 4px 4px 2px 2px rgba(50, 50, 50, 0.75);
-  position: relative;
+  position: fixed;
+  width: 100%
 }
 
 body {
-  background-color: #FFFFF0;
+  background-color: #ffffff;
   font-family: 'PT Sans Narrow', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
   color: #4a4a4a;
+}
+
+#hero {
+  background-color: #DEF1EF;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+footer {
+  background-color: #DEF1EF;
+  text-align: center;
+  width: 100%
 }
 
 h1, h2, h3, h4 {
@@ -131,7 +145,7 @@ a:active {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 60px;
 }
 
 nav {
@@ -170,13 +184,33 @@ nav>ul>li>a:active {
   color: #994c30;
 }
 
-#hero {
-  background-color: #f2ebc6;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
 main {
   padding-top: 133px;
+}
+
+.social {
+  max-width: 50px;
+  display: inline-block;
+  padding-top: 20px;
+}
+
+.social:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
+
+#story.container {
+  max-width: 100px;
+}
+
+#process.container {
+  max-width: 100px;
+}
+
+.img {
+  max-width: 350px;
+}
+
+#img2 {
+  max-width: 550px;
 }
