@@ -37,7 +37,7 @@ body {
 footer {
   background-color: #DEF1EF;
   text-align: center;
-  width: 100%
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -52,6 +52,7 @@ h1 {
 h2 {
   font-size: 2.25em;
   font-weight: 700;
+  padding: 20px 0;
 }
 
 h3 {
@@ -62,6 +63,10 @@ h3 {
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+p {
+  padding: 10px 0;
 }
 
 img {
@@ -191,12 +196,20 @@ main {
 .social {
   max-width: 50px;
   display: inline-block;
-  padding-top: 20px;
+  margin-top: 40px;
 }
 
 .social:hover {
   opacity: 0.8;
   text-decoration: none;
+}
+
+#story {
+  margin-top: 20px;
+}
+
+#process {
+  margin-top: 20px;
 }
 
 #story.container {
@@ -205,6 +218,7 @@ main {
 
 #process.container {
   max-width: 100px;
+  margin-top: 20px;
 }
 
 .img {
