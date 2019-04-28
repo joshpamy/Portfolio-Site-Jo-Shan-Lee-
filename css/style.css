@@ -29,6 +29,7 @@ body {
 
 #hero {
   background-color: #DEF1EF;
+  text-align: center;
   padding: 20px 0;
   display: inline-block;
   width: 100%;
@@ -105,6 +106,7 @@ a:active {
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
+  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
   transition: 0.2s opacity;
 }
 
@@ -112,6 +114,24 @@ a:active {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.button2 {
+  display: inline;
+  background-color: #387f55;
+  color: #ffffff !important;
+  font-weight: 400;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #994c30;
+  /* width of the border, type, color */
+  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
+  transition: 0.2s opacity;
+}
+
+.button2:hover {
+  opacity: 0.8;
+  font-size: 20px;
 }
 
 .button.contact {
@@ -131,9 +151,21 @@ a:active {
   padding: 0 15px;
 }
 
+.container {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .row {
   margin: 25px 0;
   /*25px top-bottom, 0 left-right*/
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 #work.row {
@@ -143,6 +175,10 @@ a:active {
 
 #hero h1 {
   text-align: center;
+}
+
+#hero span {
+  display: block;
 }
 
 .center {
@@ -180,6 +216,7 @@ nav>ul>li>a:visited {
 
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
+  /* when people use keyboard*/
   color: #4a4a4a;
   color: #ffcc66;
   text-decoration: underline;
@@ -227,4 +264,125 @@ main {
 
 #img2 {
   max-width: 550px;
+}
+
+#about-page h3 {
+  margin-top: 0;
+}
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-lg-7 {
+    width: 35%;
+  }
+
+  .col-lg-5 {
+    width: 65%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
+
+@keyframes color-change {
+  from {
+    fill: #edc655;
+  }
+
+  to {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 40s cloud-move-reverse infinite alternate linear;
 }
