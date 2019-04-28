@@ -9,38 +9,9 @@ Secondary: #9dcd93 (green) #a96363(red-ish) #f2ebc6 (beige) #387f55 (darker gree
   box-sizing: border-box;
 }
 
-header {
-  background-color: #DEF1EF;
-  text-align: center;
-  padding: 10px 0;
-  box-shadow: 4px 4px 2px 2px rgba(50, 50, 50, 0.75);
-  position: fixed;
-  width: 100%
-}
-
-body {
-  background-color: #ffffff;
-  font-family: 'PT Sans Narrow', sans-serif;
-  font-size: 16px;
-  font-weight: 300;
-  line-height: 1.6;
-  color: #4a4a4a;
-}
-
-#hero {
-  background-color: #DEF1EF;
-  text-align: center;
-  padding: 20px 0;
-  display: inline-block;
-  width: 100%;
-}
-
-footer {
-  background-color: #DEF1EF;
-  text-align: center;
-  width: 100%;
-}
-
+/*===================
+Styling
+=====================*/
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
@@ -54,6 +25,7 @@ h2 {
   font-size: 2.25em;
   font-weight: 700;
   padding: 20px 0;
+  text-align: center;
 }
 
 h3 {
@@ -97,12 +69,49 @@ a:active {
   color: #994c30;
 }
 
-.button {
-  display: inline;
+/*===================
+Header
+=====================*/
+header {
+  background-color: #DEF1EF;
+  text-align: center;
+  padding: 10px 0;
+  box-shadow: 4px 4px 2px 2px rgba(50, 50, 50, 0.75);
+  position: fixed;
+  width: 100%
+}
+
+.logo {
+  max-width: 60px;
+}
+
+/*===================
+Body
+=====================*/
+body {
+  background-color: #ffffff;
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 1.6;
+  color: #4a4a4a;
+}
+
+#hero {
+  background-color: #DEF1EF;
+  text-align: center;
+  padding: 20px 0;
+  display: inline-block;
+  width: 100%;
+}
+
+.button,
+.button2 {
+  display: inline-block;
   background-color: #387f55;
   color: #ffffff !important;
   font-weight: 400;
-  padding: 10px;
+  padding: 10px 20px;
   border-radius: 3px;
   border-bottom: 2px solid #994c30;
   /* width of the border, type, color */
@@ -114,19 +123,6 @@ a:active {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
-}
-
-.button2 {
-  display: inline;
-  background-color: #387f55;
-  color: #ffffff !important;
-  font-weight: 400;
-  padding: 10px;
-  border-radius: 3px;
-  border-bottom: 2px solid #994c30;
-  /* width of the border, type, color */
-  transition: [transition-property] [transition-duration] [transition-timing-function] [transition-delay];
-  transition: 0.2s opacity;
 }
 
 .button2:hover {
@@ -148,13 +144,10 @@ a:active {
 
 /* Layout styling */
 .container {
-  padding: 0 15px;
-}
-
-.container {
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
+  padding: 0 15px;
 }
 
 .row {
@@ -183,10 +176,6 @@ a:active {
 
 .center {
   text-align: center;
-}
-
-.logo {
-  max-width: 60px;
 }
 
 nav {
@@ -230,15 +219,8 @@ main {
   padding-top: 133px;
 }
 
-.social {
-  max-width: 50px;
-  display: inline-block;
-  margin-top: 40px;
-}
-
-.social:hover {
-  opacity: 0.8;
-  text-decoration: none;
+.stage_even {
+  background-color: #f2f2f2;
 }
 
 #story {
@@ -270,81 +252,37 @@ main {
   margin-top: 0;
 }
 
-/* ==============================
-Medium devices (640px and larger)
-================================= */
-@media only screen and (min-width: 640px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
+/*===================
+Footer
+=====================*/
+footer {
+  background-color: #DEF1EF;
+  text-align: center;
+  width: 100%;
+}
 
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
+.social {
+  padding: 30px 0 10px;
+}
 
-  main {
-    padding-top: 99px;
-  }
+.social img {
+  max-width: 50px;
+  display: inline-block;
+  margin: 0 10px;
+}
 
-  body {
-    font-size: 18px;
-  }
+.social:hover {
+  opacity: 0.8;
+  text-decoration: none;
+}
 
-  .col-md-6 {
-    width: 50%;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
+.copyright p {
+  margin-bottom: 0;
 }
 
 /* ==============================
-Large devices (1024px or larger)
+Animation
 ================================= */
-@media only screen and (min-width: 1024px) {
-  header {
-    text-align: unset;
-    padding: 20px 0 13px;
-  }
-
-  nav {
-    width: auto;
-    float: right;
-    margin-top: 4px;
-  }
-
-  main {
-    padding-top: 99px;
-  }
-
-  body {
-    font-size: 18px;
-  }
-
-  .col-lg-7 {
-    width: 35%;
-  }
-
-  .col-lg-5 {
-    width: 65%;
-  }
-
-  [class*="col-"] {
-    float: left;
-    padding: 10px;
-  }
-}
-
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
-
 @keyframes color-change {
   from {
     fill: #edc655;
@@ -386,3 +324,73 @@ X-large devices (1440px or larger)
 .cloud-back {
   animation: 40s cloud-move-reverse infinite alternate linear;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 20px 0 13px;
+  }
+
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  nav {
+    width: auto;
+    float: right;
+    margin-top: 4px;
+  }
+
+  main {
+    padding-top: 99px;
+  }
+
+  body {
+    font-size: 20px;
+  }
+
+  .col-lg-7 {
+    width: 58.33%;
+  }
+
+  .col-lg-5 {
+    width: 41.66%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 10px;
+  }
+}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}
