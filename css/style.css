@@ -3,7 +3,7 @@ Colors used:
 Background: #ffffff
 Font: #262626
 Primary: #006699 (blue) #ffcc66 (yellow)
-Secondary: #9dcd93 (green) #a96363(red-ish) #f2ebc6 (beige) #387f55 (darker green) #DEF1EF (light baby blue)
+Secondary: #9dcd93 (green) #a96363(red-ish) #f2ebc6 (beige) #2C6343 (darker green) #DEF1EF (light baby blue)
 */
 * {
   box-sizing: border-box;
@@ -107,7 +107,7 @@ body {
 .button,
 .button2 {
   display: inline-block;
-  background-color: #387f55;
+  background-color: #2C6343;
   color: #ffffff !important;
   font-weight: 400;
   padding: 10px 20px;
@@ -131,13 +131,13 @@ body {
 
 .button.contact {
   background-color: transparent;
-  color: #387f55 !important;
+  color: #2C6343 !important;
   text-transform: uppercase;
-  border: 2px solid #387f55;
+  border: 2px solid #2C6343;
 }
 
 .button.contact:hover {
-  background-color: #387f55;
+  background-color: #2C6343;
   color: #ffffff !important;
 }
 
@@ -413,7 +413,6 @@ Medium devices (640px and larger)
   .navtoggle li:last-child {
     display: none;
   }
-}
 }
 
 /* ==============================
