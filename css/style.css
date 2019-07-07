@@ -73,9 +73,9 @@ a:active {
 Header
 =====================*/
 header {
-  background-color: #DEF1EF;
+  background-color: #D8E9F3;
   padding: 10px 0 4px;
-  box-shadow: 4px 4px 2px 2px rgba(50, 50, 50, 0.75);
+  box-shadow: 2px 2px 2px 2px rgba(40, 40, 40, 0.75);
   position: fixed;
   width: 100%
 }
@@ -89,7 +89,7 @@ Body
 =====================*/
 body {
   background-color: #ffffff;
-  font-family: 'PT Sans Narrow', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 300;
   line-height: 1.6;
@@ -97,7 +97,7 @@ body {
 }
 
 #hero {
-  background-color: #DEF1EF;
+  background-color: #D8E9F3;
   text-align: center;
   padding: 20px 0;
   display: inline-block;
@@ -221,7 +221,7 @@ nav>ul>li>a {
   padding: 0 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #4a4a4a;
+  color: #ffffff;
 }
 
 nav>ul>li>a:visited {
@@ -231,7 +231,7 @@ nav>ul>li>a:visited {
 nav>ul>li>a:hover,
 nav>ul>li>a:focus {
   /* when people use keyboard*/
-  color: #4a4a4a;
+  color: #ffffff;
   color: #ffcc66;
   text-decoration: underline;
 }
@@ -245,7 +245,7 @@ main {
 }
 
 .stage_even {
-  background-color: #f2f2f2;
+  background-color: #FFFFFF;
 }
 
 #story {
@@ -281,7 +281,7 @@ main {
 Footer
 =====================*/
 footer {
-  background-color: #DEF1EF;
+  background-color: #D8E9F3;
   text-align: center;
   width: 100%;
 }
@@ -389,7 +389,7 @@ Medium devices (640px and larger)
   }
 
   .column_1 {
-    background: #4A84BE;
+    background: #195979;
     text-align: center;
     padding: 30px 80px;
   }
@@ -453,7 +453,7 @@ Large devices (1024px or larger)
   }
 
   .column_1 {
-    background: #4A84BE;
+    background: #195979;
     text-align: center;
     padding: 30px 80px;
   }
